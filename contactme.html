@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Jon Kristian Jr, G. Luste</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #770606;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 1.5px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .menu {
+            width: 20%;
+            background-color: #770606;
+            padding: 10px;
+        }
+
+        .menu a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #ebebeb;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #c20808;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 60%;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .main h2 {
+            color: #770606;
+            margin-bottom: 10px;
+        }
+
+        .main img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .main a {
+            color: #770606;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .main a:hover {
+            color: #c20808;
+        }
+
+        footer {
+            background-color: #770606;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .menu, .main {
+                width: 100%;
+            }
+
+            .menu {
+                text-align: center;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Jon Kristian Jr, G. Luste</h1>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <a href="aboutme.html">About Me</a>
+            <a href="subjects.html">Subject Taken</a>
+            <a href="currentlyEnrolledTo.html">Subjects Currently Enrolled</a>
+            <a href="contactme.html">Contact Me</a>
+            <a href="favorites.html">My Favorites</a>
+            <a href="Gallery.html">Gallery</a>
+        </div>
+
+        <div class="main">
+            <h2>Contact Me</h2>
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGSSaw6QErIGj6o9L1RkeSI1tzoXKQt_4xQ&usqp=CAU" alt="Phone Icon">
+                09770256414
+            </p>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Facebook Icon">
+                <a href="https://www.facebook.com/NobodyOwnsThisAccount">Jon</a>
+            </p>
+            <p>
+                <img src="https://static.vecteezy.com/system/resources/previews/016/716/465/original/gmail-icon-free-png.png" alt="Gmail Icon">
+                kristianluste@gmail.com
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 ITP4 | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

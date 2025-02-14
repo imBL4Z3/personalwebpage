@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Currently Enrolled  </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #770606;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 1.5px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .menu {
+            width: 20%;
+            background-color: #770606;
+            padding: 10px;
+        }
+
+        .menu a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #ebebeb; 
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #c20808; 
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 60%;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .main h2 {
+            color: #770606;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #770606;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: #770606;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            border: 1px solid #770606;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #c20808;
+            color: white;
+        }
+
+        .pagination a.active {
+            background-color: #770606;
+            color: white;
+        }
+
+        .navigation-arrows {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation-arrows a {
+            color: #770606;
+            font-size: 1.5rem;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navigation-arrows a:hover {
+            color: #c20808; 
+        }
+
+        footer {
+            background-color: #770606;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .menu, .main {
+                width: 100%;
+            }
+
+            .menu {
+                text-align: center;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Jon Kristian Jr, G. Luste</h1>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <a href="aboutme.html">About Me</a>
+            <a href="subjects.html">Subject Taken</a>
+            <a href="currentlyEnrolledTo.html">Subjects Currently Enrolled</a>
+            <a href="contactme.html">Contact Me</a>
+            <a href="favorites.html">My Favorites</a>
+            <a href="Gallery.html">Gallery</a>
+        </div>
+
+        <div class="main">
+            <h2>Subject Currently Enrolled</h2>
+            <table>
+                <tr>
+                    <th>Schedule</th>
+                    <th>Subject Name</th>
+                    <th>Description</th>
+                    <th>Units</th>
+                </tr>
+                <tr>
+                    <td>
+                        MW 4:10PM - 5:10PM   <br><br>TTH 11:10AM - 12:40 PM<br>
+                        
+                    </td>
+                    <td>ITP 4</td>
+                    <td>INTEGRATIVE PROGRAMMING & TECHNOLOGIES 1</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        MW 9:35AM - 10:35AM  <br><br>MW 8:00AM - 9:30AM<br>
+                    </td>
+                    <td>ITP 5</td>
+                    <td>NETWORKING 2 (CISCO 2: ROUTING PROTOCOLS & CONCEPTS)</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        MW 11:10AM - 12:10PM   <br><br>MW 1:00PM - 2:30PM<br>
+                    </td>
+                    <td>ITP 6</td>
+                    <td>INTRODUCTION TO HUMAN COMPUTER INTERACTION</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                        <td>
+                            F 8:00AM - 11:00AM
+                        </td>
+                        <td>PHILO 1</td>
+                        <td>ETHICS / ETIKA</td>
+                        <td>3.0</td>
+                    </tr>
+         
+            </table>
+            <div class="pagination">
+                <a href="currentlyEnrolledTo.html" class="active">1</a>
+                <a href="currentlyEnrolledTo_2.html">2</a>
+            </div>
+
+            <div class="navigation-arrows">
+                <a href="currentlyEnrolledTo_2.html">&#8592; Back</a>
+                <a href="currentlyEnrolledTo_2.html">Next &#8594;</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 ITP4 | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
